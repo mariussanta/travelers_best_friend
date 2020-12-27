@@ -1,5 +1,6 @@
 {% extends "travelers_best_friend_app/base.html" %}
+{% load crispy_forms_tags %}
 {% block content %}
-    <h2>Welcome home, traveler!</h2>
+    <h1>{{ user.username }}</h1>
 {% endblock content %}
 
