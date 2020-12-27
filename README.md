@@ -8,12 +8,17 @@ s.a we provide solution to manage with easy and efficiency your travel plan down
 #### Setup
 * install [Python 3.8](https://www.python.org/downloads/)
 * set up [pip](https://pip.pypa.io/en/stable/installing/) if needed
-* install any IDE. ([PyCharm](https://www.jetbrains.com/pycharm/download/#section=windows)
+* install any IDE. [PyCharm](https://www.jetbrains.com/pycharm/download/#section=windows)
 * clone the [repository](https://github.com/mariussanta/travelers_best_friend):
     * git clone git@github.com:mariussanta/travelers_best_friend.git
 * configure your venv, [Pycharm](https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html?gclid=CjwKCAiAv4n9BRA9EiwA30WNDw26q6dRbQghfY8I5E3sP8qHn1gTgw0fBCWV39qHoIm64cKCV0eO2hoCMhMQAvD_BwE).
 * install all libraries from requirements.txt by either following a [guide](https://note.nkmk.me/en/python-pip-install-requirements/) or installing them one by one or googling how-to
     * pip install -r requirements.txt
+* database(sqlite3):
+  * python manage.py makemigrations
+    * which is responsible for creating new migrations based on the changes you have made to your models
+  * python manage.py migrate
+    * which is responsible for applying and unapplying migrations
 * run the server
     * python manage.py runserver
     
