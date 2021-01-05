@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'travelers_best_friend_app',
-    'users_app',
+    'users_app.apps.UsersAppConfig',
     'crispy_forms'
 ]
 
@@ -117,6 +117,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'homepage'
@@ -131,3 +134,4 @@ EMAIL_HOST_USER = 'mariuss.santa@gmail.com'
 EMAIL_HOST_PASSWORD = 'Asds123!'
 # EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
 # EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+
